@@ -16,23 +16,30 @@ import { TodoListAllComponent } from './todo/todo-list-all/todo-list-all.compone
 import { TodoListUserComponent } from './todo/todo-list-user/todo-list-user.component';
 import { LoginComponent } from './user/login/login.component';
 import { SortPipe } from './pipes/sort.pipe';
+import { TodoAssignComponent } from './todo/todo-assign/todo-assign.component';
+import { AppRoutingModule } from './app-routing.module';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent,
     UserCreateComponent,
     UserEditComponent,
-    UserDetailComponent,
-    TodoDetailComponent,
+    LoginComponent,
     TodoCreateComponent,
     TodoEditComponent,
+    TodoDetailComponent,
+    TodoAssignComponent,
+    SortPipe,
     TodoListAllComponent,
     TodoListUserComponent,
-    LoginComponent,
-    SortPipe
+    UserComponent,
+    UserDetailComponent
   ],
   imports: [
+    BrowserModule,
+    AppRoutingModule,
     BrowserModule,
     HttpClientModule,
     CommonModule,
