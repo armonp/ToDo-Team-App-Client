@@ -1,4 +1,4 @@
-<label> {{user.firstname}} {{user.lastname}} Details</label> | 
+<label> {{user.firstName}} {{user.lastName}} Details</label> | 
 <a routerLink = "/users/create">New User</a>
 <div class="component">
     <table class = "table table-sm">
@@ -11,13 +11,13 @@
         <tr>
             <th>First Name:</th>
             <td>
-                <input [(ngModel)] = "user.firstname" type="text" size = "30" disabled>
+                <input [(ngModel)] = "user.firstName" type="text" size = "30" disabled>
             </td>
         </tr>
         <tr>
             <th>Last Name:</th>
             <td>
-                <input [(ngModel)] = "user.lastname" type="text" size = "30" disabled>
+                <input [(ngModel)] = "user.lastName" type="text" size = "30" disabled>
             </td>
         </tr>
         <tr>

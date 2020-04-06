@@ -3,12 +3,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
-import { UserComponent } from './user/user/user.component';
 import { UserCreateComponent } from './user/user-create/user-create.component';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
@@ -39,7 +35,6 @@ import { AppRoutingModule } from './app-routing.module';
     SortPipe,
     TodoListAllComponent,
     TodoListUserComponent,
-    UserComponent,
     UserDetailComponent
   ],
 imports: [
