@@ -10,23 +10,26 @@ const url:string = "http://localhost:5000/api/users"
 })
 
 export class UserService {
+  login(username:string, password:string):Observable<User> {
+    return this.http.get(`${url}/login/${username}/${password}`) as Observable<User>;
+  };
+  change(user:User):Observable<any> {
+    return this.http.put(`${url}/${user.id}`, user) as Observable<any>;
+  };
+  create(user:User):Observable<User> {
+    return this.http.post(`${url}`, user) as Observable<User>;
+  };
   list(): Observable<User[]>{
     return this.http.get(`${url}`) as Observable<User[]>;
   }
   get(id: any): Observable<User>{
     return this.http.get(`${url}/${id}`) as Observable<User>;
   }
-  create(user: User): Observable<User>{
-    return this.http.post(`${url}`, user) as Observable<User>;
-  }
-  change(user: User): Observable<any>{
-    return this.http.put(`${url}/${user.id}`, user) as Observable<any>;
-  }
   remove(user: User): Observable<any>{
     return this.http.delete(`${url}/${user.id}`) as Observable<any>;
   }
-  enter(username: string, password: string): Observable<User>{
-    return this.http.get(`${url}/login/${username}/${password}`) as Observable<User>;
-  }
-  constructor(private http: HttpClient) { }
+
+constructor(
+    private http: HttpClient
+  ) { }
 }

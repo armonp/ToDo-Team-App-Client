@@ -17,9 +17,9 @@ import { TodoListUserComponent } from './todo/todo-list-user/todo-list-user.comp
 import { LoginComponent } from './user/login/login.component';
 import { SortPipe } from './pipes/sort.pipe';
 import { TodoAssignComponent } from './todo/todo-assign/todo-assign.component';
+import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
-
-
 
 @NgModule({
   declarations: [
@@ -31,6 +31,8 @@ import { AppRoutingModule } from './app-routing.module';
     TodoEditComponent,
     TodoDetailComponent,
     TodoAssignComponent,
+    MenuComponent,
+    HomeComponent,
     SortPipe,
     TodoListAllComponent,
     TodoListUserComponent,
