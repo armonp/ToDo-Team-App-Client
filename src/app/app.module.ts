@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +13,8 @@ import { TodoCreateComponent } from './todo/todo-create/todo-create.component';
 import { TodoEditComponent } from './todo/todo-edit/todo-edit.component';
 import { TodoDetailComponent } from './todo/todo-detail/todo-detail.component';
 import { TodoAssignComponent } from './todo/todo-assign/todo-assign.component';
+import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +25,16 @@ import { TodoAssignComponent } from './todo/todo-assign/todo-assign.component';
     TodoCreateComponent,
     TodoEditComponent,
     TodoDetailComponent,
-    TodoAssignComponent
+    TodoAssignComponent,
+    MenuComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    CommonModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
