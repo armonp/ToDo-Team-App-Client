@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   message:string = "";
 
   login(username:string, password:string) : any{
-    this.usersvc.enter(username, password).subscribe(
+    this.usersvc.login(username, password).subscribe(
       res => {
         this.user = res;
         this.systemsvc.user = this.user;
