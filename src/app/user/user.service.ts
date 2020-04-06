@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { User } from './user.class';
 import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
 
-const url:string = "http://localhost:5000/api/users"
+const url2: string="http://localhost:55555/api/users" // use if running from Visual Studio
+const url:string = "http://localhost:5000/api/users" // use if running from CLI
 
 @Injectable({
   providedIn: 'root'
@@ -29,7 +30,7 @@ export class UserService {
     return this.http.delete(`${url}/${user.id}`) as Observable<any>;
   }
 
-constructor(
+  constructor(
     private http: HttpClient
   ) { }
 }

@@ -3,6 +3,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user/user.component';
@@ -39,8 +42,7 @@ import { AppRoutingModule } from './app-routing.module';
     UserComponent,
     UserDetailComponent
   ],
-  imports: [
-    BrowserModule,
+imports: [
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
