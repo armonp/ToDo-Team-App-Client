@@ -11,6 +11,7 @@ import { TodoAssignComponent } from './todo/todo-assign/todo-assign.component';
 import { TodoCreateComponent } from './todo/todo-create/todo-create.component';
 import { TodoDetailComponent } from './todo/todo-detail/todo-detail.component';
 import { TodoEditComponent } from './todo/todo-edit/todo-edit.component';
+import { TodoListAllComponent } from './todo/todo-list-all/todo-list-all.component';
 
 
 const routes: Routes = [
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: "todo/create", component: TodoCreateComponent },
   { path: "todo/detail", component: TodoDetailComponent },
   { path: "todo/edit", component: TodoEditComponent },
+  { path: "todo/listall", component: TodoListAllComponent },
 
   { path: "**", component: HomeComponent }
 ];
